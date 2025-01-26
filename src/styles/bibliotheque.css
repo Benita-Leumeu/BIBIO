@@ -1,0 +1,106 @@
+/* Style général du conteneur */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Conteneur des livres avec un maximum de 4 livres par ligne */
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Style des cartes des livres */
+.book-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Style des titres des livres */
+.book-item h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Style des informations des livres */
+.book-item p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Style de l'image du livre */
+.book-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Amélioration du style du bouton de réservation */
+.book-item button {
+  background-color: #ff6347; /* Couleur de fond vive (tomate) */
+  color: white;
+  border: none;
+  border-radius: 25px; /* Bordures arrondies pour un look plus moderne */
+  padding: 12px 20px; /* Plus de padding pour agrandir le bouton */
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour effet de profondeur */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-item button:hover {
+  background-color: #ff4500; /* Couleur plus foncée au survol */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Ombre plus profonde au survol */
+}
+
+/* Style du message de confirmation ou d'erreur */
+p {
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Style du conteneur utilisateur */
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+button {
+  margin-top: 20px;
+  display: block;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

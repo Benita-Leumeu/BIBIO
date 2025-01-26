@@ -1,0 +1,81 @@
+// Variables de couleurs
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$form-bg-color: #ffffff;
+$input-border-color: #ccc;
+$btn-primary-color: #ffffff;
+$btn-bg-color: $primary-color;
+$btn-hover-bg-color: darken($primary-color, 10%);
+$header-bg-color: #f4f4f4;
+$footer-bg-color: $secondary-color;
+
+// Styles pour la page ClassifierDocuments
+.classifier-documents-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  main {
+    flex: 1;
+    padding: 20px;
+    background-color: $header-bg-color;
+  }
+}
+
+// Styles pour le formulaire de classification
+.classifier-documents {
+  background-color: $form-bg-color;
+  padding: 30px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+
+  h2 {
+    text-align: center;
+    color: $primary-color;
+    margin-bottom: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    input[type="text"] {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid $input-border-color;
+      border-radius: 5px;
+      font-size: 1rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    button {
+      padding: 10px;
+      background-color: $btn-bg-color;
+      color: $btn-primary-color;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: $btn-hover-bg-color;
+      }
+    }
+  }
+}
+
+// Footer styling
+footer {
+  background-color: $footer-bg-color;
+  color: $btn-primary-color;
+  text-align: center;
+  padding: 20px 0;
+
+  p {
+    margin: 0;
+  }
+}
